@@ -1,0 +1,28 @@
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+	int num;
+		
+Scanner sc = new Scanner (System.in);
+
+num = sc.nextInt();
+
+if (num % 2 != 0) {
+	System.out.println("ÍMPAR");
+	}
+else System.out.println("PAR");
+
+sc.close();
+
+
+		
+	}
+} 
+
+

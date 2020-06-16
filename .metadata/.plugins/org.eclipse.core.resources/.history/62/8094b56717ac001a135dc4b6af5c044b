@@ -1,0 +1,35 @@
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		
+		int number, hour;
+		double salary, vh;
+		
+	Scanner sc = new Scanner (System.in);
+
+		
+	System.out.println("Matrícula");
+	number = sc.nextInt();
+	
+	System.out.println("Horas");
+	hour = sc.nextInt();
+
+	System.out.println("Valor hora");
+	vh = sc.nextDouble();
+
+salary = ((double) hour) * vh;
+
+System.out.println("NUMBER = " + number);
+System.out.printf("SALARY = %d.2f", salary);
+	
+	sc.close();
+		
+	}
+} 
+
+

@@ -1,0 +1,50 @@
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+		Scanner sc = new Scanner (System.in);
+
+	double x, a, f1,f2,f3;
+	int a1,a2,a3;
+	a1 = 8;
+	a2 = 18;
+	a3 = 28;
+	f1 = 2000;
+	f2 = 3000;
+	f3 = 4500;
+
+
+	x = sc.nextDouble();
+	
+	if (x<= f1)
+	{a = 0;
+	System.out.println("Isento");
+	}
+	
+	else if (x>f1 && x <= f2)
+	{a = (x - f1)*(a1)/100;
+	System.out.printf("R$ %.2f", a);
+	
+	}
+	else if (x> f2 && x <= f3)
+	{a = ((x - f2)*(a2)/100) + ((f2-f1)*(a1)/100);
+	System.out.printf("R$ %.2f", a);
+	}
+	else if(x>f3)
+	{a = (x - f3)*(a3)/100 + (f3-f2)*(a2)/100 + (f2-f1)*(a1)/100;
+	System.out.printf("R$ %.2f", a);
+	}
+
+	sc.close();
+
+
+ }
+}
+
+
+

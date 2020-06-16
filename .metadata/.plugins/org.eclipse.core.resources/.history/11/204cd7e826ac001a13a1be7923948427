@@ -1,0 +1,33 @@
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+	int ini,fin, dur;
+		
+Scanner sc = new Scanner (System.in);
+
+ini = sc.nextInt();
+fin = sc.nextInt();
+
+if (fin<=ini) {
+fin = fin+24;
+dur = fin-ini; }
+else {dur = fin - ini;
+}
+
+System.out.println("O jogo durou " + dur + " hora(s)");
+
+
+sc.close();
+
+
+		
+	}
+} 
+
+

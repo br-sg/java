@@ -1,0 +1,22 @@
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+		Scanner sc = new Scanner(System.in);
+		
+int N = sc.nextInt();
+int i, f;
+for (i=0;i<N;i++) {
+	
+N = N * (N - i);
+}
+System.out.println(N);
+		
+		sc.close();
+
+} }

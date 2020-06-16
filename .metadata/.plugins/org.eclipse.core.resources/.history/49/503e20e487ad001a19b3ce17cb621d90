@@ -1,0 +1,36 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Student;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+Student st = new Student();
+
+st.name = sc.nextLine();
+st.grade1 = sc.nextDouble();      
+st.grade2 = sc.nextDouble();      
+st.grade3 = sc.nextDouble();      
+
+System.out.println("FINAL GRADE "+st.finalGrade());
+if(st.finalGrade()<60) {
+	System.out.println("FAILED");
+	System.out.printf("Missing %.2f points",st.missingPoints());}
+	else { 
+		System.out.println("PASS");
+		}
+	
+	
+
+		
+		sc.close();
+		
+	
+} }

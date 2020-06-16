@@ -1,0 +1,3 @@
+	public void Deposit(double money) {
+		this.money += money;
+	}

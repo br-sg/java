@@ -1,0 +1,48 @@
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+int a,b,c,d,e, z,qt;
+a = 1;
+b = 2;
+c = 3;
+d = 4;
+e = 5;
+double f,g,h,i,j, check;
+f = 4;
+g = 4.50;
+h = 5.00;
+i = 2.00;
+j = 1.50;
+check = 1;
+
+Scanner sc = new Scanner (System.in);
+z = sc.nextInt();
+qt = sc.nextInt();
+
+if (z == a) {
+	check = f * qt;
+}
+else if (z == b) {
+	check = g * qt;
+}
+else if (z == c) {
+	check = h * qt;}
+else if (z == d) {
+	check = i * qt;
+}
+else if (z == e || x == e) {
+check = j + check;}
+
+System.out.println("Total: R$ "+ check);
+
+sc.close(); }
+}
+
+
+

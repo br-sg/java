@@ -1,0 +1,24 @@
+package entities;
+
+public class Student {
+	public double grade1, grade2, grade3, fg;
+	
+	public double fg() {
+		return (grade1*3+grade2*3.5+grade3*3.5)/10;
+	}
+	
+	public void fg(double fg) {
+this.fg = fg();
+	}
+
+	
+	public String toString() {
+		if (fg >= 60) {
+			return "PASS";}
+			else { 
+			return "FAIL" +
+			"Missing points:" + 60 +- fg;
+		}
+	}
+
+}
